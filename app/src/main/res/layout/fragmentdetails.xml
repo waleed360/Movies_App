@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+
+
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:weightSum="1">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="70dp"
+               android:text="New Text"
+               android:id="@+id/title"
+               android:gravity="center"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentStart="true"
+               android:background="#53c245"
+               android:textSize="20dp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="184dp"
+            android:id="@+id/imageView2"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_weight="5.05" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/runtime"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/date"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/votecount"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+               />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save_favorite"
+                android:id="@+id/save"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceLarge"
+                   android:text="Large Text"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:id="@+id/overview"
+                   android:textSize="10dp"/>
+
+
+           </LinearLayout>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:text="Trailer"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="5dp"
+               android:textSize="30dp"/>
+
+
+           <com.linearlistview.LinearListView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/trailer"
+               android:orientation="vertical"
+
+               >
+           </com.linearlistview.LinearListView>
+
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:text="Review"
+               android:layout_marginTop="0dp"
+               android:layout_marginLeft="5dp"
+               android:textSize="30dp"/>
+
+           <com.linearlistview.LinearListView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/review"
+               android:orientation="vertical"
+               >
+           </com.linearlistview.LinearListView>
+
+
+       </LinearLayout>
+</ScrollView>
